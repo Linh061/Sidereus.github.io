@@ -6,6 +6,20 @@
     <description>Recent content on Sidereus&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
+    <lastBuildDate>Sun, 25 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://linh061.github.io/Sidereus.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello</title>
+      <link>https://linh061.github.io/Sidereus.github.io/posts/hello/</link>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://linh061.github.io/Sidereus.github.io/posts/hello/</guid>
+      <description>&lt;p&gt;categories: [&amp;ldquo;user test&amp;rdquo;]
+tags: [&amp;ldquo;test&amp;rdquo;]&lt;/p&gt;
+&lt;p&gt;this is a test article.&lt;/p&gt;
+&lt;p&gt;in-line equation $E = mc^2$&lt;/p&gt;
+$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$</description>
+    </item>
   </channel>
 </rss>

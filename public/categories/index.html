@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Categories | Sidereus&#39;s Blog</title>
+<title>分类 | Sidereus&#39;s Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -65,14 +65,19 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://linh061.github.io/Sidereus.github.io/categories/">
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<meta property="og:url" content="https://linh061.github.io/Sidereus.github.io/categories/">
   <meta property="og:site_name" content="Sidereus&#39;s Blog">
-  <meta property="og:title" content="Categories">
+  <meta property="og:title" content="分类">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Categories">
+  <meta name="twitter:title" content="分类">
 
 </head>
 <body class="list" id="top">
@@ -104,12 +109,32 @@
             </div>
         </div>
         <ul id="menu" class="menu">
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/categories/" title="Categories">
+                    <span class="active">Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main">
 <header class="page-header">
-    <h1>Categories</h1>
+    <h1>分类</h1>
 </header>
 
 <ul class="terms-tags">
@@ -134,6 +159,21 @@
         <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  renderMathInElement(document.body, {
+    delimiters: [
+      { left: "$$", right: "$$", display: true },
+      { left: "$", right: "$", display: false },
+      { left: "\\[", right: "\\]", display: true },
+      { left: "\\(", right: "\\)", display: false }
+    ],
+    throwOnError: false
+  });
+});
+</script>
+
+
 
 <script>
     let menu = document.getElementById('menu');

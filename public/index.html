@@ -19,6 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://linh061.github.io/Sidereus.github.io/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="https://linh061.github.io/Sidereus.github.io/index.json" title="json">
 <link rel="alternate" hreflang="en" href="https://linh061.github.io/Sidereus.github.io/">
 <noscript>
     <style>
@@ -65,7 +66,12 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://linh061.github.io/Sidereus.github.io/">
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<meta property="og:url" content="https://linh061.github.io/Sidereus.github.io/">
   <meta property="og:site_name" content="Sidereus&#39;s Blog">
   <meta property="og:title" content="Sidereus&#39;s Blog">
   <meta property="og:locale" content="zh_cn">
@@ -118,10 +124,64 @@
             </div>
         </div>
         <ul id="menu" class="menu">
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
-<main class="main"> 
+<main class="main"><div class="profile">
+    <div class="profile_inner">
+        <img draggable="false" src="https://linh061.github.io/Sidereus.github.io/images/Lain-computer.jpg" alt="profile image" title=""
+            height="150" width="150" />
+        <h1>Sidereus</h1>
+        <span>A pharmacy student who is passionate about computer science.</span><div class="social-icons" >
+</div>
+
+        <div class="buttons">
+            <a class="button" href="https://linh061.github.io/Sidereus.github.io/posts/" rel="noopener" title="Article List">
+                <span class="button-inner">
+                    Article List&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="button" href="https://github.com/Linh061" rel="noopener" title="GitHub">
+                <span class="button-inner">
+                    GitHub&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
     </main>
     
 <footer class="footer">
@@ -142,6 +202,21 @@
         <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  renderMathInElement(document.body, {
+    delimiters: [
+      { left: "$$", right: "$$", display: true },
+      { left: "$", right: "$", display: false },
+      { left: "\\[", right: "\\]", display: true },
+      { left: "\\(", right: "\\)", display: false }
+    ],
+    throwOnError: false
+  });
+});
+</script>
+
+
 
 <script>
     let menu = document.getElementById('menu');

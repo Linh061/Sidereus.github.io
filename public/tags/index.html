@@ -65,7 +65,12 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://linh061.github.io/Sidereus.github.io/tags/">
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<meta property="og:url" content="https://linh061.github.io/Sidereus.github.io/tags/">
   <meta property="og:site_name" content="Sidereus&#39;s Blog">
   <meta property="og:title" content="Tags">
   <meta property="og:locale" content="zh_cn">
@@ -104,6 +109,26 @@
             </div>
         </div>
         <ul id="menu" class="menu">
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://linh061.github.io/Sidereus.github.io/tags/" title="Tags">
+                    <span class="active">Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -134,6 +159,21 @@
         <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  renderMathInElement(document.body, {
+    delimiters: [
+      { left: "$$", right: "$$", display: true },
+      { left: "$", right: "$", display: false },
+      { left: "\\[", right: "\\]", display: true },
+      { left: "\\(", right: "\\)", display: false }
+    ],
+    throwOnError: false
+  });
+});
+</script>
+
+
 
 <script>
     let menu = document.getElementById('menu');
