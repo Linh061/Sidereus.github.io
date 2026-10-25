@@ -21,7 +21,7 @@ inline = [['$', '$']]
   tag = 'tags'
 
 [[menu.main]]
-  name = "categories"
+  name = "CATEGORIES"
   url = "/categories/"
   weight = 20
 
