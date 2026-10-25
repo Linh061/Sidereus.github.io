@@ -6,7 +6,7 @@ title = 'Hello'
 
 this is a test article.
 
-in-line equation \( E = mc^2 \)
+in-line equation $E = mc^2$
 
 $$
 \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}

@@ -13,7 +13,11 @@ inline = [['$', '$']]
 [params]
   math = true
   comments = true
+  mainSections = ["posts"]
 
 [params.homeInfoParams]
   Title = "Sidereus"
-  Content = 'A pharmacy student who is passionate about computer science. <br><img src="/images/Lain-computer.jpg" height="100" width="100">'
+  Content = '''
+    A pharmacy student who is passionate about computer science.
+![avatar](/images/Lain-computer.jpg)
+'''
