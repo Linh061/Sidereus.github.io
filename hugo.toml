@@ -14,10 +14,6 @@ inline = [['$', '$']]
   math = true
   comments = true
 
-[params.profileMode]
-  enabled = true
-  title = "Sidereus"
-  subtitle = "A pharmacy student who is passionate about computer science."
-  imageUrl = "images/Lain-computer.jpg"
-  imageWidth = 150
-  imageHeight = 150
+[params.homeInfoParams]
+  Title = "Sidereus"
+  Content = 'A pharmacy student who is passionate about computer science. <br><img src="/images/Lain-computer.jpg" height="100" width="100">'
