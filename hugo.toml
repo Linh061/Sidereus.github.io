@@ -13,3 +13,11 @@ inline = [['$', '$']]
 [params]
   math = true
   comments = true
+
+[params.profileMode]
+  enabled = true
+  title = "Sidereus"
+  subtitle = "A pharmacy student who is passionate about computer science."
+  imageUrl = "images/Lain-computer.jpg"
+  imageWidth = 150
+  imageHeight = 150
