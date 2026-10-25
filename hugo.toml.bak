@@ -1,0 +1,54 @@
+baseURL = 'https://linh061.github.io/Sidereus.github.io/'
+languageCode = 'zh-cn'
+title = "Sidereus's Blog"
+theme = 'PaperMod'
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 10
+
+[[menu.main]]
+  name = "Archive"
+  url = "/archives/"
+  weight = 20
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 30
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['$$', '$$']]
+inline = [['$', '$']]
+
+[params]
+  math = true
+  comments = true
+  mainSections = ["posts"] 
+  customPostMeta = true
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[params.profileMode]
+  enabled = true
+  title = "Sidereus"
+  subtitle = "A pharmacy student who is passionate about computer science."
+  imageUrl = "images/Lain-computer.jpg"
+  imageWidth = 150
+  imageHeight = 150
+
+[[params.profileMode.buttons]]
+    name = "Article List"
+    url = "https://linh061.github.io/Sidereus.github.io/posts/"
+
+[[params.profileMode.buttons]]
+    name = "GitHub"
+    url = "https://github.com/Linh061"

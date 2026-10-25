@@ -1,4 +1,4 @@
-baseURL = 'https://linh061.github.io/Sidereus.github.io/'
+﻿baseURL = 'https://linh061.github.io/Sidereus.github.io/'
 languageCode = 'zh-cn'
 title = "Sidereus's Blog"
 theme = 'PaperMod'
@@ -19,11 +19,6 @@ theme = 'PaperMod'
   name = "Tags"
   url = "/tags/"
   weight = 30
-
-[[menu.main]]
-  name = "Categories"
-  url = "/categories/"
-  weight = 20
 
 [markup.goldmark.extensions.passthrough]
 enable = true
