@@ -14,6 +14,16 @@ inline = [['$', '$']]
   math = true
   comments = true
   mainSections = ["posts"] 
+  customPostMeta = true
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[[menu.main]]
+  name = "categories"
+  url = "/categories/"
+  weight = 20
 
 [params.profileMode]
   enabled = true

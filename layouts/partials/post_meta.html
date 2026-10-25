@@ -1,0 +1,17 @@
+﻿{{- $scratch := newScratch }}
+{{- if not .Date.IsZero -}}
+  {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default ":date_long" site.Params.DateFormat)))) }}
+{{- end }}
+{{- if (.Param "ShowReadingTime") -}}
+  {{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime)))) }}
+{{- end }}
+{{- with .GetTerms "categories" }}
+  {{- $categoryLinks := slice }}
+  {{- range . }}
+    {{- $categoryLinks = $categoryLinks | append (printf "<a href='%s'>%s</a>" .RelPermalink .LinkTitle) }}
+  {{- end }}
+  {{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (delimit $categoryLinks " · "))) }}
+{{- end }}
+{{- with ($scratch.Get "meta") }}
+  {{- delimit . " · " | safeHTML }}
+{{- end }}
