@@ -2,6 +2,8 @@
 date = '2026-10-25T16:53:22+08:00'
 draft = false
 title = 'Hello'
+categories: ["user test"] 
+tags: ["test"]
 +++
 
 this is a test article.
