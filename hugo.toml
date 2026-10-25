@@ -2,6 +2,23 @@ baseURL = 'https://linh061.github.io/Sidereus.github.io/'
 languageCode = 'zh-cn'
 title = "Sidereus's Blog"
 theme = 'PaperMod'
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 10
+
+[[menu.main]]
+  name = "Archive"
+  url = "/archives/"
+  weight = 20
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 30
 
 [markup.goldmark.extensions.passthrough]
 enable = true
@@ -21,7 +38,7 @@ inline = [['$', '$']]
   tag = 'tags'
 
 [[menu.main]]
-  name = "CATEGORIES"
+  name = "Categories"
   url = "/categories/"
   weight = 20
 
