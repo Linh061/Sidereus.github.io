@@ -13,11 +13,19 @@ inline = [['$', '$']]
 [params]
   math = true
   comments = true
-  mainSections = ["posts"]
 
-[params.homeInfoParams]
-  Title = "Sidereus"
-  Content = '''
-    A pharmacy student who is passionate about computer science.
-![avatar](/images/Lain-computer.jpg)
-'''
+[params.profileMode]
+  enabled = true
+  title = "Sidereus"
+  subtitle = "A pharmacy student who is passionate about computer science."
+  imageUrl = "images/Lain-computer.jpg"
+  imageWidth = 150
+  imageHeight = 150
+
+[[params.profileMode.buttons]]
+    name = "Article List"
+    url = "/posts/"
+
+[[params.profileMode.buttons]]
+    name = "GitHub"
+    url = "https://github.com/Linh061"
