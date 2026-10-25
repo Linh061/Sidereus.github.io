@@ -1,0 +1,37 @@
+﻿{{ define "main" }}
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  {{ if eq .Kind "taxonomy" }}
+    {{/* 这是分类/标签的“总列表”页，例如 /categories/ */}}
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+    {{ range .Pages }}
+      <article class="post-entry">
+        <header class="entry-header">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        </header>
+      </article>
+    {{ end }}
+
+  {{ else if eq .Kind "term" }}
+    {{/* 这是具体的分类页，例如 /categories/user-test/ */}}
+    {{ range .Pages }}
+      <article class="post-entry">
+        <header class="entry-header">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | truncate 200 }}
+        </div>
+        <footer class="entry-footer">
+          {{ .Date | time.Format ":date_long" }}
+        </footer>
+      </article>
+    {{ else }}
+      <p>该分类下暂无文章。</p>
+    {{ end }}
+  {{ end }}
+{{ end }}
