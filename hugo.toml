@@ -13,6 +13,7 @@ inline = [['$', '$']]
 [params]
   math = true
   comments = true
+  mainSections = ["posts"] 
 
 [params.profileMode]
   enabled = true
