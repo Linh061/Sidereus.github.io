@@ -20,6 +20,11 @@ theme = 'PaperMod'
   url = "/tags/"
   weight = 30
 
+[[menu.main]]
+  name = "Categories"
+  url = "/categories/"
+  weight = 20
+
 [markup.goldmark.extensions.passthrough]
 enable = true
 
@@ -36,11 +41,6 @@ inline = [['$', '$']]
 [taxonomies]
   category = 'categories'
   tag = 'tags'
-
-[[menu.main]]
-  name = "Categories"
-  url = "/categories/"
-  weight = 20
 
 [params.profileMode]
   enabled = true
