@@ -1,3 +1,15 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://linh061.github.io/Sidereus.github.io/'
+languageCode = 'zh-cn'
+title = "Sidereus's Blog"
+theme = 'PaperMod'
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['$$', '$$']]
+inline = [['$', '$']]
+
+[params]
+  math = true
+  comments = true
