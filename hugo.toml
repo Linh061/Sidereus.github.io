@@ -25,7 +25,7 @@ inline = [['$', '$']]
 
 [[params.profileMode.buttons]]
     name = "Article List"
-    url = "/posts/"
+    url = "https://linh061.github.io/Sidereus.github.io/posts/"
 
 [[params.profileMode.buttons]]
     name = "GitHub"
