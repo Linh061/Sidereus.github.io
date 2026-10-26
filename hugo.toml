@@ -1,4 +1,4 @@
-﻿baseURL = 'https://linh061.github.io/Sidereus.github.io/'
+baseURL = 'https://linh061.github.io/Sidereus.github.io/'
 languageCode = 'zh-cn'
 title = "Sidereus's Blog"
 theme = 'PaperMod'
@@ -34,7 +34,6 @@ inline = [['$', '$']]
   customPostMeta = true
 
 [taxonomies]
-  category = 'categories'
   tag = 'tags'
 
 [params.profileMode]
